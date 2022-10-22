@@ -2,8 +2,6 @@
 
 This script parse data from a csv and import to Fire.
 
-> Estimated time to complete: 30min
-
 # Instructions
 
 1.  Clone this repository
