@@ -9,12 +9,10 @@ This script parse data from a csv and import to Fire.
 
 ```
 npm install
-
 ```
 
 ```
 node index.js
-
 ```
 
 ## Issues and Questions
