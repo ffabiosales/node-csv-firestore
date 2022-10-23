@@ -7,7 +7,7 @@ const DB = new Firestore();
  * @TODO use batch for bulk insert.
  */
 async function updateFirestore(data) {
-  for (const [key] of Object.entries(data)) {
+  for (const [key, value] of Object.entries(data)) {
     let country = {
       name: `${key}`,
     };
@@ -29,7 +29,7 @@ async function updateFirestore(data) {
 // parse csv data to JSON
 (async () => {
   try {
-    const json = await CSVToJSON().fromFile("./data/world-cities.csv");
+    const json = await CSVToJSON().fromFile("../world-cities.csv");
     const key = "country";
 
     // Group cities by country
